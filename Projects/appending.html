@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        #button{
+            position: fixed;
+            left: 55%;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(101, 66, 240);
+            color: white;
+            font-size: 20px;
+        }
+        #createNewButton{
+            position: relative;
+            top: 100px;
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: black;
+            padding: 20px;
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            
+        }
+        #Remove_button{
+            position: fixed;
+            left: 25%;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(219, 19, 189);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <button id="button">Add New Page</button>
+    <button id="Remove_button">Remove Page</button>
+
+
+    <script>
+        const btn = document.getElementById("button");
+        const remove_btn = document.getElementById("Remove_button");
+
+        let create;
+        btn.addEventListener("click" , () => {
+            
+            create = document.createElement("div");
+            let text = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus dicta culpa, rerum incidunt quasi ad minus praesentium illum, alias quas error vitae, nisi voluptate voluptas ea explicabo natus animi?");
+            create.appendChild(text);
+            create.id = "createNewButton";
+            document.body.appendChild(create);
+        });     
+        const remove_create = document.getElementById("Remove_button");
+        let box = document.getElementById("createNewButton");
+        
+        remove_btn.addEventListener("click" , () => {
+           
+            document.body.removeChild(box);
+
+        });
+
+      
+        
+
+    </script>
+
+
+    
+</body>
+</html>

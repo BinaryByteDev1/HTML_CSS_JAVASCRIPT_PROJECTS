@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ 
+    background-color: #aaa1d3;
+}
+.container{
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+
+}
+.screen_show{
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    height: 300px;
+    border-radius: 8px;
+    background: #aaa1d3;
+    box-shadow: inset 5px 5px 6px #978fbc,
+            inset -5px -5px 6px #bdb3ea;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    resize: none;
+}
+.screen_show::placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+
+.main_box{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.buttons_boxes{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+#back_space_btn{
+    width: 140px;
+    color: red;
+}
+.buttons_boxes button{
+    width: 58px;
+    height: 59px;
+    padding: 25px;
+    border: none;
+    border-radius: 4px;
+    background: #aaa1d3;
+    box-shadow: inset -5px 5px 10px #867fa7,
+            inset 5px -5px 10px #cec3ff;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+  
+}
+button:hover{
+    border-radius: 4px;
+    background: linear-gradient(315deg, #9991be, #b6ace2);
+    box-shadow:  -5px -5px 10px #867fa7,
+                 5px 5px 10px #cec3ff;
+    transition: 0.5s;
+ 
+
+}
+.space_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.space{
+    width: 380px;
+    height: 59px;
+    padding: 25px;
+    border: none;
+    border-radius: 4px;
+    background: #aaa1d3;
+    box-shadow: inset -5px 5px 10px #867fa7,
+            inset 5px -5px 10px #cec3ff;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+#capsLock_btn{
+    width: 170px;
+    height: 59px;
+    padding: 25px;
+    border: none;
+    border-radius: 4px;
+    background: #aaa1d3;
+    box-shadow: inset -5px 5px 10px #867fa7,
+            inset 5px -5px 10px #cec3ff;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+
+
+}
+#enter_btn{
+    width: 170px;
+    height: 59px;
+    padding: 25px;
+    border: none;
+    border-radius: 4px;
+    background: #aaa1d3;
+    box-shadow: inset -5px 5px 10px #867fa7,
+            inset 5px -5px 10px #cec3ff;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+}
+#enter_btn:hover{
+    border-radius: 4px;
+    background: linear-gradient(315deg, #9991be, #b6ace2);
+    box-shadow:  -5px -5px 10px #867fa7,
+                 5px 5px 10px #cec3ff;
+    transition: 0.5s;
+ 
+
+}
+
+
+

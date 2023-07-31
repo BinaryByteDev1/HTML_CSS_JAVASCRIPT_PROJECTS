@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Events</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(33, 73, 193);
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+        }
+        .main_box{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            border-radius: 10px; 
+            background-color: white;
+ 
+        }
+        .main_box p{
+            font-size: 18px;
+            font-weight: 500;
+            text-align: justify;
+            padding: 20px;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main_box">
+            <h2>Scroll Events In Javascript</h2>
+            <p> 
+                expedita omnis optio saepe itaque minus similique, qui minima adipisci nostrum quod! Libero neque perspiciatis omnis consequuntur officiis. Laudantium sunt maxime quo reprehenderit, odit ratione dolor blanditiis hic magni officiis? Sequi, non esse in veniam voluptatem praesentium eveniet? Numquam quaerat ipsa sint velit dolore eum ex maiores vel adipisci. Consectetur sapiente omnis numquam molestias voluptates exercitationem natus pariatur dolore, sed accusantium nihil quam nisi delectus laboriosam saepe aliquid inventore iure sit a laborum culpa. Numquam quibusdam facilis ducimus, quam hic ratione placeat illum, asperiores neque tempora animi ex? Itaque minima modi nam accusamus! Nemo, quaerat unde! A fugiat iste sit voluptas, ipsum iusto velit quaerat nam facilis nemo, praesentium temporibus consequatur, laudantium excepturi deserunt! Asperiores, eos ad aspernatur laudantium nostrum at.expedita omnis optio saepe itaque minus similique, qui minima adipisci nostrum quod! Libero neque perspiciatis omnis consequuntur officiis. Laudantium sunt maxime quo reprehenderit, odit ratione dolor blanditiis hic magni officiis? Sequi, non esse in veniam voluptatem praesentium eveniet? Numquam quaerat ipsa sint velit dolore eum ex maiores vel adipisci. Consectetur sapiente omnis numquam molestias voluptates exercitationem natus pariatur dolore, sed accusantium nihil quam nisi delectus laboriosam saepe aliquid inventore iure sit a laborum culpa. Numquam quibusdam facilis ducimus, quam hic ratione placeat illum, asperiores neque tempora animi ex? Itaque minima modi nam accusamus! Nemo, quaerat unde! A fugiat iste sit voluptas, ipsum iusto velit quaerat nam facilis nemo, praesentium temporibus consequatur, laudantium excepturi deserunt! Asperiores, eos ad aspernatur laudantium nostrum at.
+                expedita omnis optio saepe itaque minus similique, qui minima adipisci nostrum quod! Libero neque perspiciatis omnis consequuntur officiis. Laudantium sunt maxime quo reprehenderit, odit ratione dolor blanditiis hic magni officiis? Sequi, non esse in veniam voluptatem praesentium eveniet? Numquam quaerat ipsa sint velit dolore eum ex maiores vel adipisci. Consectetur sapiente omnis numquam molestias voluptates exercitationem natus pariatur dolore, sed accusantium nihil quam nisi delectus laboriosam saepe aliquid inventore iure sit a laborum culpa. Numquam quibusdam facilis ducimus, quam hic ratione placeat illum, asperiores neque tempora animi ex? Itaque minima modi nam accusamus! Nemo, quaerat unde! A fugiat iste sit voluptas, ipsum iusto velit quaerat nam facilis nemo, praesentium temporibus consequatur, laudantium excepturi deserunt! Asperiores, eos ad aspernatur laudantium nostrum at.
+            </p>
+        </div>
+    </div>
+
+    <script>
+
+        let mainBox = document.getElementById("main_box");
+        mainBox.addEventListener("scroll" , ()=>{
+            if(mainBox.pageYOffset > 200){
+                mainBox.style.background = "#000000";
+                mainBox.style.color = "#ffffff";
+            }
+        });
+        
+    </script>
+</body>
+</html>

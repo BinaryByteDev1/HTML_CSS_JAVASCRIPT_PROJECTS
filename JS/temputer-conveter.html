@@ -1,0 +1,110 @@
+<!DOCTYPE htm   l>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script src="javascript.js"></script>
+    <script src="thiredparty.js"></script>
+</head>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+
+        }
+        #container{
+            width: 760px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: royalblue; */
+            border-radius: 10px;
+            background: linear-gradient(90deg ,rgb(101, 8, 163),rgb(223, 17, 113));
+
+        }
+        .input-box{
+            text-align: center;
+            color: white;
+
+        }
+        .input-box label{
+            font-weight: bold;
+            font-size: 26px;
+        }
+        #cal{
+            padding: 15px 30px;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        #far{
+            padding: 15px 30px;
+            border-radius: 5px;
+            border: none;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 5px;
+
+
+        }
+        h1{
+            position: absolute;
+            top: 0px;
+            text-transform: capitalize;
+            font-size: 74px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(90deg , orange,rgb(101, 8, 163),rgb(223, 17, 113));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+           
+        }
+
+    </style>
+
+<body>
+    <h1>temprature Convert</h1>
+    <div id="container">
+        <div class="input-box">
+            <label>Calcius</label><br>
+            <input type="number" placeholder="0" id="cal">
+
+        </div>
+        <div class="input-box">
+            <label>Farehnite</label><br>
+            <input type="number" placeholder="32" id="far">
+
+        </div>
+    </div>
+
+
+            <script>
+                        let cel = document.getElementById("cal");
+                        let far = document.getElementById("far");
+                        cel.addEventListener("input" , function() {
+                            let cl = this.value;
+                            let fr = (cl * 9/5) + 32;
+                            if(!Number.isInteger(fr)) {
+                                fr = fr.toFixed(4);
+                            }
+                            far.value = fr;
+                        });
+                        far.addEventListener("input" , function() {
+                            let fr = this.value;
+                            let cl = (fr - 32) * 5/9;
+                            if(!Number.isInteger(cl)) {
+                                cl = cl.toFixed(4);
+                                
+                            }
+                            cel.value = cl; 
+                        });
+        
+            </script>
+
+</html>

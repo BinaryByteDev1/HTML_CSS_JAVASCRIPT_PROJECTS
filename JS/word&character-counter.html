@@ -1,0 +1,77 @@
+<!DOCTYPE htm   l>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script src="javascript.js"></script>
+    <script src="thiredparty.js"></script>
+</head>
+    <style>
+        body{
+            padding: 50px 100px;
+            
+        }
+        h1{
+            text-transform: capitalize;
+            text-align: center;
+            background-color: #006780;
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        textarea{
+            resize: none;
+            width: 100%;
+            height: 280px;
+            border: 2px solid #006780;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        p{
+            text-align: center;
+            background-color:  #006780;
+            margin: 0;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+    </style>
+
+<body>
+
+    <h1>word and character counter</h1>
+    <textarea  id="text-box"></textarea>
+    <p>
+        <span id="words">0</span> words
+        <span id="char">0</span>  characters
+    </p>
+  
+    
+    <script>
+        
+        let textbox = document.getElementById("text-box");
+        textbox.addEventListener('input' , function() {
+            let text = this.value;
+            let char = text.length;
+            document.getElementById("char").innerHTML = char;
+
+            text=text.trim();
+            let words = text.split(" ");
+            let cleanlist = words.filter(function(elm) {
+                return elm != "";
+
+            })
+            document.getElementById("words") .innerHTML = cleanlist.length;
+
+
+        });
+        
+    </script>
+
+    
+</body>           
+</html>

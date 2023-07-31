@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header{
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+
+}
+.container{
+    width: 1350px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+#logo-image{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+nav > ul {
+    display: flex;
+
+}
+nav > ul li{
+    padding: 40px 25px;
+    list-style: none;
+    
+
+}
+nav>ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+nav>ul li a:hover{
+    text-decoration: underline;
+    color: rgb(221, 49, 115);
+    transition: 0.5s;
+}
+
+.mega-menu{
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    width: 100%;
+    /* height: 300px; */
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 35px 35px;
+    background-color: white;
+    box-shadow: 10px 10px 8px whitesmoke,
+                -10px 10px 8px whitesmoke;
+    
+}
+nav > ul li:hover .mega-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.mega-menu-items {
+    flex-basis: 25%;
+    margin: 1.5%;
+}
+.mega-menu-items ul #list{
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.mega-menu-items ul #list:hover{
+    text-decoration: overline;
+    color: rgb(216, 103, 10);
+    transition: 0.6s;
+    box-shadow: 5px 5px 10px rgb(223, 215, 215),
+                -5px -5px 10px rgb(219, 212, 212);
+    border-radius: 20px;
+    
+}
+.mega-menu-items h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    background: linear-gradient(90deg , rgb(21, 134, 149) , rgb(94, 16, 149) ,rgb(179, 24, 65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+}

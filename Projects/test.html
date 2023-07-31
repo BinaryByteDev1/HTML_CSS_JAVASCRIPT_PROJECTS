@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .text_box{
+            width: 900px;
+            height: auto;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 10px;
+            font-size: 20px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%);
+           
+        }
+    </style>
+</head>
+<body>
+    <button id="Upper_button">UpperCase</button>
+    <button id="Lower_button">Captalize</button>
+    <button id="bold_button">Bold Text</button>
+    <button id="text_color">Text Color</button>
+    <button id="delete_format">Delete Formatting</button>
+    <button id="random_ipsum">Random Text</button>
+
+    <button id="justify">Justify Text</button>
+    <button id="background">Background</button>
+
+
+<div class="text_box" id="text_box_edit">
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, beatae? Sunt, dolorum qui inventore magnam molestiae ea dolores eveniet suscipit? Officiis, rerum animi similique cupiditate maiores eos ipsum. Placeat, dolor!</p>
+</div>
+    <script>
+        let text  = document.getElementById("text");
+        let upper_button = document.getElementById("Upper_button");
+        let lower_button = document.getElementById("Lower_button");
+        let text_box = document.getElementById("text_box_edit");
+        let bold = document.getElementById("bold_button");
+        let color = document.getElementById("text_color");
+        let delete_for = document.getElementById("delete_format");
+        let random = document.getElementById("random_ipsum");
+        let justify = document.getElementById("justify");
+        let background = document.getElementById("background");
+
+
+
+        upper_button.addEventListener("click" , () =>{
+            text_box.style.textTransform = "uppercase";
+        });
+
+        lower_button.addEventListener("click" , ()=>{
+            text_box.style.textTransform = "capitalize";
+        })
+
+        bold.addEventListener("click" , () =>{
+            text_box.style.fontWeight = "bold";
+        });
+
+        color.addEventListener("click" , () =>{
+            let hexVal = Math.floor(Math.random() * 0xffffff).toString(16);
+            text_box.style.color = `#${hexVal}`;
+        });
+
+        delete_for.addEventListener("click" , ()=>{
+            text_box.style.color = "black";
+            text_box.style.fontWeight = "100";
+            text_box.style.textTransform = "lowercase";
+            text_box.style.textAlign = "left";
+            text_box.style.background = 'none';
+
+
+
+        });
+
+        random.addEventListener("click" , () =>{
+            text_box.innerHTML += "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ducimus tempore cupiditate suscipit quae vero doloremque provident reiciendis fuga nam veniam, iste perspiciatis sit quam dolorem eius eum molestias culpa cumque enim optio! Excepturi .</p>";
+        });
+
+        justify.addEventListener("click" , () =>{
+            text_box.style.textAlign = "justify";
+        })
+
+
+
+
+        background.addEventListener("click" , ()=>{
+            const hexValBack = Math.floor(Math.random()* 0xffffff).toString(16);
+            if(hexValBack == '#000000') {
+                    text_box.style.color = "#ffffff";
+                }
+                else{
+                    text_box.style.color = "#000000";
+                }
+            text_box.style.background = `#${hexValBack}`;
+        });
+
+    </script>
+    
+</body>
+</html>

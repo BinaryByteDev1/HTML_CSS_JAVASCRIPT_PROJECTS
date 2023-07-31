@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.6s;
+}
+body{
+    display: flex;
+    justify-content: flex-end;  
+    background-color: #C3C7DF;
+}
+.Container{
+    width: 170px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.main_div{
+    width: 100%;
+    text-align: center;
+    padding: 13px 20px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: monospace;
+    cursor: pointer;
+}
+.theme_parent_box{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin-top: 2px;
+    border-radius: 6px;
+    background-color: rgb(116, 126, 212);
+    cursor: pointer;
+    display: none;
+}
+.main_theme_opt{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+.main_theme_opt #theme_icon{
+    position: absolute;
+    right: 60px;
+}
+#theme_icon_open{
+    padding-left: 10px;
+}
+#theme_icon_close{
+    display: none;
+    padding-left: 10px;
+}
+.themes_opt_box{
+    width: 100%;
+    background: hsla(208, 33%, 21%, 1);
+    background: linear-gradient(315deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#243748", endColorstr="#4B749F", GradientType=1 );;
+    height: auto;
+    border-radius: 6px;
+    border-top: 1px solid #7652ee;
+    border-left: 1px solid #7652ee;
+    border-right: 1px solid #7652ee;
+    margin-top: 2px;
+}
+.theme_opt{
+    padding: 10px;
+    border-bottom: 1px solid #7652ee;
+}
+.theme_opt {
+    color: white;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.theme_opt#light_mode:hover{
+    background-color: #C3C7DF;
+    transition: 0.5s;
+    color: black;
+    font-weight: 600;
+}
+.theme_opt#dark_mode:hover{
+    background-color: #120D0D;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.theme_opt#auto_mode:hover{
+    background-color: #DCD0D0;
+    transition: 0.5s;
+    color: black;
+    font-weight: 600;
+}

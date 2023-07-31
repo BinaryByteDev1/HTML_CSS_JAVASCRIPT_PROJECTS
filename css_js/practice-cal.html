@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+
+  </head>
+  <body>
+      <div>
+  
+        <table>
+          <tr>
+            <td colspan="3"><input type="text" id="output"></td>
+            <td><input type="button" id="clearbtn" value="C" onclick="clr()"/></td>
+  
+          </tr>
+  
+          <tr id=>
+            <td><input type="button" id="innert" value="1" onclick="op('1')"/></td>
+            <td><input type="button" id="innert" value="2" onclick="op('2')"/></td>
+            <td><input type="button" id="innert" value="3" onclick="op('3')"/></td>
+            <td><input type="button" id="innertt" value="/" onclick="op('/')"/></td>
+  
+  
+          </tr>
+  
+          <tr>
+            <td><input type="button" id="innert" value="4" onclick="op('4')"/></td>
+            <td><input type="button" id="innert" value="5" onclick="op('5')"/></td>
+            <td><input type="button" id="innert" value="6" onclick="op('6')"/></td>
+            <td><input type="button" id="innertt" value="-" onclick="op('-')"/></td>
+  
+  
+          </tr>
+  
+          <tr>
+            <td><input type="button" id="innert" value="7" onclick="op('7')"/></td>
+            <td><input type="button" id="innert" value="8" onclick="op('8')"/></td>
+            <td><input type="button" id="innert" value="9" onclick="op('9')"/></td>
+            <td><input type="button" id="innertt" value="+" onclick="op('+')"/></td>
+  
+  
+          </tr>
+  
+          <tr>
+            <td><input type="button" id="innertt" value="." onclick="op('.')"/></td>
+            <td><input type="button" id="innert" value="0" onclick="op('0')"/></td>
+  
+            <td><input type="button" id="innertt" value="=" onclick="answer()"/></td>
+  
+            <td><input type="button" id="innertt"  value="*" onclick="op('*')"/></td>
+  
+  
+          </tr>
+  
+        </table>
+      </div>
+
+  </body>
+  <script>
+    function op(abc)
+    {
+      document.getElementById("output").value+=abc;
+    }
+
+    function answer()
+    {
+      let x = document.getElementById("output").value;
+      let y = eval(x);
+      document.getElementById("output").value = (y);
+    }
+
+    function clr()
+    {
+      document.getElementById("output").value = " ";
+    }
+
+
+  </script>
+</html>

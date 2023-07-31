@@ -1,0 +1,463 @@
+#searching{
+    background-color :rgb(67, 16, 138);
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(225deg, #2e0461, #370474);
+    box-shadow:  -5px 2px 3px #270352,
+                 5px -3px 3px #3f0586;
+    color: white;
+}
+#navbarSupportedContent{
+    padding-left: 8px;
+}
+
+#searching::placeholder{
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    #navbarSupportedContent{
+        position: relative;
+        left: -30px;
+        margin-bottom: 15px;
+        width: 220px;
+
+
+    }
+#searching{
+    position: relative;
+        left: 40px;
+}
+#search_btn{
+    position: relative;
+    left: 40px;
+
+}
+}
+
+@media screen and (max-width: 500px){
+    #navbarSupportedContent{
+        position: relative;
+        left: -35px;
+        margin-bottom: 15px;
+
+    }
+#searching{
+    position: relative;
+        left: 25px;
+}
+#search_btn{
+    position: relative;
+    left: 25px;
+
+}
+}
+
+#body-container{
+    background: hsla(234, 80%, 88%, 1);
+    background: linear-gradient(45deg, hsla(234, 80%, 88%, 1) 0%, hsla(340, 68%, 88%, 1) 50%, hsla(342, 72%, 85%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(234, 80%, 88%, 1) 0%, hsla(340, 68%, 88%, 1) 50%, hsla(342, 72%, 85%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(234, 80%, 88%, 1) 0%, hsla(340, 68%, 88%, 1) 50%, hsla(342, 72%, 85%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CACFF9", endColorstr="#F5CBD9", GradientType=1 );
+}
+
+#heading{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: hsla(252, 40%, 29%, 1);
+    background: linear-gradient(-56deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%); 
+    background: -moz-linear-gradient(-45deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);   
+    background: -webkit-linear-gradient(45deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#392D69", endColorstr="#B57BEE", GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#paragraph-text{
+    padding: 10px 1px;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#search-inputbox{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width: 600px){
+#heading{
+    font-size: 32px;
+    font-weight: 600;
+
+
+}
+#paragraph-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+}
+#button{
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    font-weight: 600; 
+    background-color: #ff861a;
+    border: none;
+}
+#button:hover{
+    background-color: black;
+    transition: 0.6s;
+}
+#button-2{
+    font-size: 20px;
+    margin: 0px 30px;
+    width: 300px;
+    height: 60px;
+    background-color: rgb(60, 16, 194);
+    font-weight: 600;
+    border: none;
+   
+}
+#button-2:hover{
+    background-color: black;
+    transition: 0.6s;
+
+}
+#button-logo{
+    font-size: 32px;
+    padding-right: 10px;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px){
+#button{
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    font-weight: 500; 
+    
+}
+#button-2{
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    font-weight: 500;
+    margin: 10px 0px;
+
+
+}
+}
+
+@media screen and (min-width: 600px )and (max-width: 696px){
+    #button{
+        font-size: 18px;
+        width: 100%;
+        height: 60px;
+        font-weight: 500; 
+        
+    }
+    #button-2{
+        font-size: 18px;
+        width: 100%;
+        height: 60px;
+        font-weight: 500;
+        margin: 10px 0px;
+    
+    
+    }
+}
+
+@media screen and (min-width: 768px )and (max-width: 1044px){
+    #button{
+        font-size: 18px;
+        width: 100%;
+        height: 60px;
+        font-weight: 500; 
+        
+    }
+    #button-2{
+        font-size: 18px;
+        width: 100%;
+        height: 60px;
+        font-weight: 500;
+        margin: 10px 0px;
+    
+    
+    }
+}
+
+#horizontal-div{
+    margin-top: 28px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    overflow: auto;
+    column-gap: 70px;
+
+}
+#horizontal-div::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+#circle-box{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+background: #ebb2b2;
+box-shadow: inset 5px 5px 10px #a57d7d,
+            inset -5px -5px 10px #ffe7e7;
+    margin-top: 40px;
+   margin-left: 20px;
+
+}
+
+
+#circle-image{
+    filter: brightness(70%);
+
+
+}
+#circle-image:hover{
+    filter: brightness(100%);
+    transition: 0.6s;
+
+}
+
+
+
+@media screen and (max-width: 500px){
+    
+#horizontal-div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 225px;
+    display: flex;
+    overflow: auto;
+    column-gap: 70px;
+
+}
+    #circle-box{
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+    background: #ebb2b2;
+    box-shadow: inset 5px 5px 10px #a57d7d,
+                inset -5px -5px 10px #ffe7e7;
+        margin-top: 10px;
+       margin-left: 5px;
+    }   
+}
+#para{
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 14px;
+    background: rgb(185, 13, 159);
+    background: linear-gradient(40deg, rgb(38, 7, 104) 0%, rgb(148, 12, 71) 100%);
+    background: -moz-linear-gradient(40deg, rgb(28, 6, 95) 0%, rgb(142, 17, 77) 100%);
+    background: -webkit-linear-gradient(40deg, rgb(7, 36, 139) 0%, rgb(133, 13, 65) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BA3429", endColorstr="#9243A9", GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+#para:hover{
+    font-weight: 600;
+    background: rgb(18, 18, 18);
+    background: linear-gradient(40deg, rgb(29, 29, 29) 0%, rgb(36, 35, 36) 100%);
+    background: -moz-linear-gradient(40deg, rgb(28, 28, 28) 0%, rgb(33, 33, 33) 100%);
+    background: -webkit-linear-gradient(40deg, rgb(22, 22, 22) 0%, rgb(19, 18, 19) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BA3429", endColorstr="#9243A9", GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.8s;
+}
+#cards-row{
+    background-color: white;
+    padding-bottom: 30px;
+
+
+}
+
+#cards{
+    padding-top: 20px;
+    color: black;
+    border-radius: 5px;
+background: #ffffff;
+box-shadow:  -5px -5px 18px #666666,
+             5px 5px 18px #ffffff;
+    filter: brightness(88%);
+    cursor: pointer;
+}
+#cards:hover{
+
+    transition: 0.6s;
+    border-radius: 5px;
+background: linear-gradient(315deg, #ffffff, #e6e6e6);
+box-shadow:  -5px -5px 18px #666666,
+             5px 5px 18px #ffffff;
+    filter: brightness(100%);
+
+
+
+}
+
+
+
+button {
+    background-color: #0078d0;
+    border: 0;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    outline: 0;
+    padding: 10px 62px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+  }
+button:hover {
+    background-color: rgb(143, 26, 96);
+    transition: 0.7s;
+    border-radius: 5px;
+}
+
+#docs-button{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 2px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  5px 5px 10px #b3b3b3,
+             inset -5px -5px 10px #ffffff;
+    color: black;
+
+
+
+
+}
+#docs-button:hover{
+    background: hsla(5, 64%, 45%, 1);
+background: linear-gradient(45deg, hsla(5, 64%, 45%, 1) 0%, hsla(286, 43%, 46%, 1) 100%);
+background: -moz-linear-gradient(45deg, hsla(5, 64%, 45%, 1) 0%, hsla(286, 43%, 46%, 1) 100%);
+background: -webkit-linear-gradient(45deg, hsla(5, 64%, 45%, 1) 0%, hsla(286, 43%, 46%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ba3429", endColorstr="#9243a9", GradientType=1 );
+    transition: 0.7s;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+#social-media-secession{
+    margin: 36px 45px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #cfcfcf,
+               -5px -5px 10px #ffffff;
+    border-radius: 10px;
+    padding-top: 8px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+#social-icon-1{
+    font-size: 25px;
+    color: rgb(54, 82, 164);
+    cursor: pointer;
+
+}
+#social-icon-2{
+    font-size: 25px;
+    color: rgb(29, 10, 140);
+    cursor: pointer;
+
+
+
+
+}#social-icon-3{
+    font-size: 25px;
+    color: rgb(95, 196, 23);
+    cursor: pointer;
+
+
+
+
+}#social-icon-4{
+    font-size: 25px;
+    color: #8010a2;
+    cursor: pointer;
+
+
+
+}#social-icon-5{
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+
+
+
+}#social-icon-6{
+    font-size: 25px;
+    color: rgb(67, 66, 66);
+    cursor: pointer;
+
+
+
+}
+h5{
+    text-transform: uppercase;
+    font-family: "Proxima Nova","Verdana","Avenir Next";
+    font-weight: 700;
+    background: hsla(285, 42%, 33%, 1);
+    background: linear-gradient(45deg, hsla(285, 42%, 33%, 1) 0%, hsla(333, 54%, 51%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(285, 42%, 33%, 1) 0%, hsla(333, 54%, 51%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(285, 42%, 33%, 1) 0%, hsla(333, 54%, 51%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#663177", endColorstr="#C63F7B", GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#footer-links{
+    color: rgb(103, 99, 99);
+    padding: 18px;
+    line-height: 32px;
+    font-family: "Proxima Nova","Verdana","Avenir Next";
+    font-weight: 500;
+    cursor: pointer;
+
+}
+#footer-links:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    transition: 0.6s;
+    font-weight: 500;
+
+}
+
+
+
+
+
+

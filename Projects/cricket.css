@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.container{
+    width: 85%;
+}
+.main_heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    
+}
+
+
+.name_team{
+    margin-top: 20px;
+}
+
+.ol_lists{
+    padding-left: 5px;
+    margin-top: 15px;
+}
+.ol_lists li{
+    margin: 17px;
+    font-size: 20px;
+
+
+}
+.signature_box{
+    text-align: right;
+}
+.signature_box p{
+    line-height: 10px;
+    font-size: 18px;
+}
+
+.text_content p{
+    font-size: 20px;
+
+}
+
+.footer p{
+    font-size: 20px;
+
+}
+
+.ol_div p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+
+
+}

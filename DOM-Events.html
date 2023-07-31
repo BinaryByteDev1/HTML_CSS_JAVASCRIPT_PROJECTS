@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>DOM events in javascript</title>
+
+    <style>
+   
+    </style>
+
+</head>
+
+
+<body>
+    <script>
+
+    //let button = document.getElementById("btn");
+        //  button.addEventListener("click" , btnclick);
+        //  function btnclick() {
+        //     document.body.classList.toggle("test"); 
+        //  }
+
+        // var button = document.getElementById('btn');
+        // button.addEventListener("click" , () => {
+        //     document.body.classList.toggle("bi-moon");
+        //     document.body.classList.toggle("bi-brightness");
+        // });
+
+        // var elm = document.getElementById("btn");
+        // elm.addEventListener("click" , function() {
+        //     document.body.classList.toggle("dark");
+        // });
+        // elm.addEventListener("mouseover" , function () {
+        //     elm.innerHTML = "Dark Mode";
+        // });
+
+        // elm.addEventListener("mouseout" , function () {
+        //     elm.innerHTML = "Click Me";
+        // });
+
+        // var elm = document.getElementById("btn");
+        // function clickme1() {
+        //     console.log("click 1 is done");
+        // }
+
+        // function clickme2() {
+        //     console.log("click 2 is done");
+        // }
+        // elm.addEventListener("click" , clickme1);
+        // elm.addEventListener("click" , clickme2);
+        // elm.removeEventListener("click" , clickme2);
+
+        // var button = document.getElementById("btn");
+        // function fun() {
+        //     alert("Hello World...");
+        // }
+
+        // var elm = document.getElementById("btn");
+
+        // window.addEventListener("keypress" , function(event) {
+        //         console.log(event.key);
+        // });
+
+        // window.addEventListener("scroll" , function() {
+        //     if(window.pageYOffset > 300 || window.pageXOffset <= 800) {
+        //         document.body.style.background = "orange";
+
+        //     }
+
+        //     if(window.pageYOffset >= 820) {
+        //         document.body.style.background = "black";
+
+        //     }
+        //     if(window.pageYOffset < 300) {
+        //         document.body.style.background = "white";
+
+        //     }
+        // });
+
+
+        // input Events 
+
+        // let input = document.getElementById("input");
+        // input.addEventListener("focus" , focusFun);
+        // input.addEventListener("blur" , blurFun);
+
+        // function focusFun() {
+        //     input.style.background = "#bacfea";
+        //     input.style.color = "white";
+
+        // } 
+
+        // function blurFun() {
+        //     input.style.background = "white";
+        //     input.style.color = "black";
+
+
+        // }
+
+        // let input = document.getElementById("input");
+        // input.addEventListener("change" , function () {
+        //     console.log(this.value);
+
+        //     if(input.value == null) {
+        //         alert("Please Fill The Cradationals...")
+
+        //     }
+        // });
+
+        // let input = document.getElementById("input");
+        // let textarea = document.getElementById("textarea");
+        // input.addEventListener("input" , function () {
+        //     let value = (this.value);
+        //     for(let print of value) {
+        //         document.write(print);
+
+        //     }
+
+        // });
+
+        // let input = document.getElementById("input");
+        // input.addEventListener("input" , inputFun);
+
+        // function inputFun() {
+        // console.log(this.value);
+        //     input.style.background = "Orange";
+        //     input.style.outline = "none";
+        //     input.style.color = "black";
+
+        // }
+
+
+        // let link = document.getElementById("link");
+        // link.addEventListener("click", function clickFun(event) {
+        //         event.preventDefault();
+        //         console.log(link);
+        // });
+
+        // let btn = document.getElementById("submitBtn");
+        // btn.addEventListener("click" , function clickFun(e) {
+        //         e.preventDefault();
+        // });
+
+        // window.alert("hello");
+        // window.prompt("hello");
+        // window.confirm("hello");
+
+
+        // function xyz() {
+        //     console.log("Hello Woeld...");
+        // }
+        // xyz();
+        // window.xyz();
+
+        // console.log(window.innerWidth);
+        // console.log(window.innerHeight);
+        // console.log(window.outerWidth);
+        // console.log(window.outerHeight);
+
+        // var button = document.getElementById('btn');
+        // button.addEventListener("click" , function fun(){
+        //     window.open();
+        // });
+
+        // var button = document.getElementById('btn');
+        // var closeBtn = document.getElementById('close');
+        // var url = "https://www.google.com";
+        // var feature = "width=500 , height=300";
+        // var name = "Google";
+
+        // button.addEventListener("click" , function () {
+        //     window.open(url , feature , name);
+        // });
+
+        // var button = document.getElementById('btn2');
+        // var closeBtn = document.getElementById('close');
+        // var url = "https://www.yahoo.com";
+        // var feature = "width=500 , height=300";
+        // var name = "Yahoo";
+
+        // button.addEventListener("click" , function () {
+        //     window.open(url , feature , name);
+        // });
+
+
+        // closeBtn.addEventListener("click", function() {
+        //     window.close();
+
+        // });
+
+        // var google = document.getElementById("googleBtn");
+        // var yahoo = document.getElementById("yahooBtn");
+        // var closeB = document.getElementById("closeBtn");
+        // let win;
+        // google.addEventListener("click" , function() {
+        //     win = window.open("https://www.google.com" , "width=400 , height=300" , "Google");
+        // });
+
+        // yahoo.addEventListener("click" , function() {
+        //     win = window.open("https://www.yahoo.com" , "width=500,height=500" , "Google");
+        // });    
+
+        // closeB.addEventListener("click" , function() {
+        //     win.close();
+
+        // });
+
+        // setTimeout(setfun , 3000);
+        //     function setfun() {
+        //         alert("Hello World...");
+        //         console.log("Hello World...")
+        //     }
+
+
+        // let set = setTimeout(myfun , 3000);
+        // function myfun() {
+        //     console.log("Hello World...");
+
+        // }
+        // // clearInterval(set);
+
+
+        // var set = setInterval(myfun , 1000);
+        //     function myfun() {
+        //         document.write("Hello world...<br>");
+        // }
+        // clearInterval(set);
+
+        // console.log(location.href);
+        // console.log(location.pathname);
+        // console.log(location.protocol);
+        // console.log(location.port);
+
+        // function fun() {
+        //     // window.location = "https://www.youtube.com";
+        //     // window.location.href = "https://www.youtube.com";
+        //     // location.assign("https://www.youtube.com");
+        // }
+
+        // var button = document.getElementById("btn");
+        // function fun() {
+        //     location.reload;
+        // }
+        // console.log("hello...");
+
+        //   NAVIGATOR OBJECT IN JS
+        // console.log(navigator.appCodeName);
+        // console.log(navigator.appVersion);
+        // console.log(navigator.appCodeName);
+        // console.log(navigator.cookieEnabled);
+        // console.log(navigator.userAgent);
+        // console.log(navigator.platform);
+        // console.log(navigator.javaEnabled());
+        // console.log(navigator.javaEnabled());
+
+        // //   SCREEN OBJECT IN JS
+        // console.log(screen.width);
+        // console.log(screen.height);
+        // console.log(screen.colorDepth);
+        // console.log(screen.orientation);
+    
+        
+    // let cel = document.getElementById("cel");
+    // let fah = document.getElementById("fah");
+
+    // cel.addEventListener("input" , function() {
+    //     let c = this.value;
+    //     let f = (c * 9/5) + 32;
+    //     if(!Number.isInteger(f)){
+    //         f = f.toFixed(4);
+
+    //     }
+    //     fah.value = f;
+    // });
+
+    // fah.addEventListener("input" , function() {
+    //     let f = this.value;
+    //     let c = (f - 32) * 5/9;
+    //     if(!Number.isInteger(c)){
+    //         c = c.toFixed(4);
+    //     }
+
+        
+    //     cel.value = c;
+
+    // });
+
+    // let textbox = document.getElementById("text-box");
+    // textbox.addEventListener("input" , function() {
+    //     let text = this.value;
+    //     let char = text.length;
+    //     document.getElementById("char").innerHTML = char;
+    //     text = text.trim();
+    //     let words = text.split(" ");
+    //     let cleanlist = words.filter(function(elm) {
+    //         return elm != "";
+
+    //     });
+    //     console.log(cleanlist);
+    //     document.getElementById("words").innerHTML = cleanlist.length;
+
+    // });
+        
+
+
+    </script>
+</body>
+
+</html>

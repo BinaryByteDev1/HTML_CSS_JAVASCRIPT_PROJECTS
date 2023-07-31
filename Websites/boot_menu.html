@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nav bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="boot_menu.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(50, 6, 117); padding-left: 8%; padding-right: 8%;" id="main-nav-bar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#" style="font-weight: 700; font-size: 26px;">Coding Hub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 ms-5 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#" style="font-weight: 500;" id="nav-bar-options">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" style="font-weight: 500;" id="nav-bar-options">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" style="font-weight: 500;" id="nav-bar-options">Contect Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" style="font-weight: 500;" id="nav-bar-options">Our Team</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500;" id="nav-bar-options">
+                 Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search. . ." aria-label="Search" style="border-radius: 3px; width: 280px;" id="searching">
+              <button class="btn btn-outline-dark" type="submit" style=" background-color: rgb(43, 42, 42); font-size: 18px; border-radius: 3px; border: 0px; color: white;" id="search_btn"><i class="bi bi-search-heart"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid justify-contant-center mt-1" id="body-container">
+        <div class="row">
+          <div class="col-md-12 text-center mt-4 justify-contant-center">
+            <h1 id="heading">Learn all programming languages in Coding hub</h1>
+            <p id="paragraph-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum culpa vero ipsa minima et temporibus saepe, enim impedit consequatur maxime quas debitis distinctio minus voluptate? Amet sed blanditiis vero quae labore temporibus explicabo, rem harum maiores ratione illo repellat accusamus ipsa distinctio ut beatae voluptates! Expedita maxime ipsum soluta, ipsa excepturi reiciendis sit quam deleniti molestiae pariatur animi neque?</p>
+
+            <div class="row" id="search-inputbox">
+              <div class="col-md-8">
+
+                <div class="input-group mb-3">
+                 <span class="input-group-text"><i class="bi bi-search"></i></span>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                      <label for="floatingInputGroup1">Username</label>
+                  </div>
+               </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-md-8 p-3">
+                <button type="button" class="btn btn-primary" id="button"><i class="bi bi-book-half" id="button-logo"></i>Documents</button>
+                <button type="button" class="btn btn-primary" id="button-2"><i class="bi bi-people-fill" id="button-logo"></i>Our Team</button>
+              </div>
+
+              <div id="horizontal-div">
+                <div class="col-2" id="circle-box">
+                  <img id="circle-image" src="programming.jpg" alt="" width="140px" style="border-radius: 50%;">
+                  <p id="para">Programming</p>
+                </div>
+                <div class="col-2" id="circle-box">
+                  <img id="circle-image" src="web-development.webp" alt=" " style="width: 140px; height: 140px; border-radius: 50%;">
+                  <p id="para">Web Development</p>
+
+                </div>
+                <div class="col-2" id="circle-box">
+                  <img id="circle-image" src="app-develop.jpg" alt="" style="width: 140px; height: 140px; border-radius: 50%;">
+                  <p id="para">App Development</p>
+
+
+                </div>
+                <div class="col-2" id="circle-box">
+                  <img id="circle-image" src="hacking.webp" alt="" style="width: 140px; height: 140px; border-radius: 50%;">
+                  <p id="para">Ethical Hacking</p>
+                </div>
+                <div class="col-2" id="circle-box">
+                  <img id="circle-image" src="game-develop.webp" alt="" style="width: 140px; height: 140px; border-radius: 50%;">
+                  <p id="para">Game Development</p>
+
+
+                </div>
+                <div class="col-2" id="circle-box">
+                  <img id="circle-image" src="marekitting.webp" alt="" style="width: 140px; height: 140px; border-radius: 50%;">
+                  <p id="para">Digital Marketing</p>
+
+                </div>
+                <div class="col-2" id="circle-box"></div>
+                <div class="col-2" id="circle-box"></div>
+                <div class="col-2" id="circle-box"></div>
+              </div>
+
+              <div class="row bg-primary">
+                <div class="col-md-12 mt-3 mb-3">
+                  <p class="text-white" style="font-size: 24px; font-weight: 500; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Create an account to Explore new technologies.</p>
+                  <button type="button" class="btn btn-secondary btn-lg" style="background-color:  #ff861a; border-radius: 4px; padding: 9px 65px;">Sign up</button>
+                </div>
+              </div>
+
+              <div class="row justify-content-evenly m-b-5" id="cards-row">
+                <p class="text-dark mt-4" style="font-weight: 500; font-size: 22px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicin odit quos quam natus, officia veritatis quos quam natus, officia veritatis </p>
+                <div class="col-md-3 text-dark mt-4 pb-3" id="cards">
+                  <img src="web-development.webp" alt="" style="width: 100%;">
+                  <h2>Web Development Course</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias et vitae, consequuntur non ut!</p>
+                <button>Free Course</button>
+
+                </div>
+                <div class="col-md-3 text-dark mt-4 pb-3" id="cards">
+                  <img src="app-develop.jpg" alt=""style="width: 100%;">
+                  <h2>App Development Course</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore  sunt deserunt quod incidunt eius?</p>
+                <button>Free Course</button>
+
+                </div>
+                <div class="col-md-3 text-dark mt-4 pb-3" id="cards">
+                  <img src="map5.jpg" alt=""style="width: 100%;">
+                  <h2>Computer Networking Course</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing  non natus aliquam atque minus ratione eligendi,at.</p>
+                <button>Free Course</button>
+
+                </div>
+              </div>
+
+
+              
+              <div class="row justify-content-evenly m-b-5" id="cards-row">
+                
+                <div class="col-md-3 text-dark mt-5 pb-3" id="cards">
+                  <img src="javascript-images.webp" alt="" style="width: 100%; height: 250px;">
+                  <h2>Javascript Course</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias et obcaconsequuntur non ut!</p>
+                <button>Free Course</button>
+
+                </div>
+                <div class="col-md-3 text-dark mt-5 pb-3" id="cards">
+                  <img src="python-image.webp" alt=""style="width: 100%;height: 250px;">
+                  <h2>Python Course</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.voluptates non sunt deserunt incidunt eius?</p>
+                <button>Free Course</button>
+
+                </div>
+                <div class="col-md-3 text-dark mt-5 pb-3" id="cards">
+                  <img src="game-development-2.webp" alt=""style="height: 250px; width: 100%;">
+                  <h2>Game Development Course</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit natus aliquam atque minus ratione eligendi,at.</p>
+                <button>Free Course</button>
+
+                </div>
+              </div>
+
+
+
+
+              
+              <div class="row justify-content-evenly m-b-5" id="cards-row">
+                
+                <div class="col-md-3 text-dark mt-5 pb-3" id="cards">
+                  <img src="c++-images.webp" alt="" style="width: 100%; height: 250px;">
+                  <h2>C & C++ Course</h2>
+                  <p>Lorem ipsum dolor sit amet consecteturrepudiandae cupiditate, vitae, consequuntur non ut!</p>
+                <button>Free Course</button>
+
+                </div>
+                <div class="col-md-3 text-dark mt-5 pb-3" id="cards">
+                  <img src="marekitting.webp" alt=""style="width: 100%;height: 250px;">
+                  <h2>Digital marketing Course</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing non sunt deserunt quod incidunt eius?</p>
+                <button>Free Course</button>
+
+                </div>
+                <div class="col-md-3 text-dark mt-5 pb-3" id="cards">
+                  <img src="software-development.webp" alt=""style="height: 250px; width: 100%;">
+                  <h2>Software Development Course</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing  aliquam atque minus ratione eligendi,at.</p>
+                <button>Free Course</button>
+
+                </div>
+              </div>
+        </div>
+        <div class="row justify-content-center bg-light pb-4 pb-4">
+          <div class="col-md-3 mt-3">
+            <button id="docs-button">Explore More</button>            
+          </div>
+          <div class="col-md-3 bg-light mt-3">
+            <button id="docs-button">Documents</button>            
+          </div>
+          <div class="col-md-3 bg-light mt-3">
+            <button id="docs-button">Free Courses</button>            
+          </div>
+        </div>
+
+        <div class="row justify-content-center bg-light">
+          <div class="col-md-1" id="social-media-secession">
+            <i class="bi bi-facebook" id="social-icon-1"></i>
+            <p><b>15.7k</b></p>
+            <p style="color: rgb(64, 63, 63);">Followers</p>
+
+          </div>
+          <div class="col-md-1" id="social-media-secession">
+            <i class="bi bi-twitter" id="social-icon-2"></i>
+             <p><b>15.7k</b></p>
+           <p style="color: rgb(64, 63, 63);">  `Followers</p>
+
+          </div>
+          <div class="col-md-1" id="social-media-secession">
+            <i class="bi bi-whatsapp" id="social-icon-3"></i>
+             <p><b>15.7k</b></p>
+            <p style="color: rgb(71, 70, 70);">Followers</p>
+          </div>
+          <div class="col-md-1"  id="social-media-secession">
+            <i class="bi bi-instagram" id="social-icon-4"></i>
+             <p><b>15.7k</b></p>
+            <p style="color: rgb(60, 60, 60);">Followers</p>
+
+          </div>
+          <div class="col-md-1"  id="social-media-secession">
+            <i class="bi bi-youtube" id="social-icon-5"></i>
+             <p><b>15.7k</b></p>
+            <p style="color: rgb(65, 64, 64);">Followers</p>
+
+          </div>
+          <div class="col-md-1" id="social-media-secession">
+            <i class="bi bi-github" id="social-icon-6"></i>
+             <p><b>15.7k</b></p>
+               <p style="color: rgb(70, 69, 69);">Followers</p>
+
+          </div>
+        </div>
+
+        <div class="row bg-dark text-white pt-5 pb-4">
+          <div class="col-md-3 pt-3">
+            <h5>Site Links</h5>
+            <b id="footer-links"> Home </b><br>
+            <b id="footer-links">About </b><br>
+            <b id="footer-links"> Documents </b><br>
+            <b id="footer-links">Our Services </b> <br>
+            <b id="footer-links">Contect Us </b><br>
+            <b id="footer-links">Contect Us</b> <br>
+            <b id="footer-links">Contect Us </b><br>
+            <b id="footer-links">Contect Us </b><br>
+            
+
+          </div>
+          <div class="col-md-3 pt-3">
+            <h5>Resources</h5>
+            <b id="footer-links">Computer Programming</b> <br>
+              <b id="footer-links">Web Designing </b><br>
+              <b id="footer-links">App Designing </b><br>
+              <b id="footer-links">Ethical Hacking </b><br>
+              <b id="footer-links">Computer Networking </b><br>
+              <b id="footer-links">Digital Marketing </b><br>
+              <b id="footer-links">software Development</b> <br>
+              <b id="footer-links">Game Development </b><br>
+
+            
+          </div>
+          <div class="col-md-3 pt-3">
+            <h5>Projects</h5>
+            <b id="footer-links">Web Applications Projects</b> <br>
+              <b id="footer-links">App Develop Projects</b> <br>
+              <b id="footer-links">Game Develop Projects </b><br>
+              <b id="footer-links">Linux opearting system</b> <br>
+              <b id="footer-links">Python Jarvis Projects </b><br>
+              <b id="footer-links">Command prompt Commands </b><br>
+              <b id="footer-links">Javascript Projects</b> <br>
+              <b id="footer-links">Javascript Projects </b><br>
+
+          
+          </div>
+          <div class="col-md-3 pt-3">
+            <h5>About Us</h5>
+               <b id="footer-links">About Developers</b> <br>
+               <b id="footer-links">Contect Us</b> <br>
+               <b id="footer-links">Our Team</b><br>
+               <b id="footer-links">Terms & Conditions </b><br>
+               <b id="footer-links">Privicy Policy</b><br>
+                
+            
+          </div>
+        </div>
+
+        <div class="row" style="background-color: black">
+          <div class="col-md-12 text-white pt-3 pb-2 text-center">
+            <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: 1px;">Copyright © 2023 Coding Hub inc. All rights reserved</p>
+
+          </div>
+        </div>
+
+        
+
+
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

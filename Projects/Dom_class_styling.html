@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<style>
+    .addBtn{
+        background-color: orange;
+        border: none;
+        padding: 14px;
+        border-radius: 4px;
+    }
+    .dark_mode{
+        background-color: rgb(59, 58, 58);
+        color: white;
+    }
+    .btnn{
+        padding: 20px;
+        background-color: orange;
+        border: none;
+        border-radius: 4px;
+    }
+   
+    .btnn_2{
+        padding: 20px;
+        background-color: #6618c0;
+        border: none;
+        border-radius: 4px;
+    }
+
+</style>
+<body>
+    
+    <button id="button" class="btnn">Click Me</button>
+
+
+    <script>
+
+
+        let button = document.getElementById("button");
+
+        button.addEventListener("click" , ()=>{
+            document.body.classList.toggle("dark_mode");
+       
+
+
+        });
+            button.classList.add("btnn");
+            button.classList.replace("btnn"  , "btnn_2");
+
+
+
+
+
+
+
+
+        // console.log(button.classList.contains("btnn"));
+
+
+
+
+        // let button = document.getElementById("button");
+        // button.classList.add("addBtn");
+        // console.log(button.className);
+
+        // button.classList.remove("addBtn");
+        // console.log(button.className);
+
+
+
+
+        // let button = document.getElementById("btn_id");
+        // for(let clas of button.classList){
+        //     console.log(clas);
+        // }
+
+        // button.addEventListener("click" , ()=>{
+        //     button.className += "button";
+        // });
+    
+
+        // let button = document.getElementById("btn");
+        // console.log(button.classList);
+        // console.log(button.className);
+        // console.log(button.id);
+        // console.log(button.name);
+
+
+
+    </script>
+</body>
+</html>

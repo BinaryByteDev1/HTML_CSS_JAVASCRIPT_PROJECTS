@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="Todo_App.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="main_box" id="main_todo_area">
+
+            <div class="text_add_div">
+                <input type="text" id="todu_text_box" placeholder="Enter List :- ">
+                <button id="add_todo_button" class="btn">Add</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        let text_box = document.getElementById("todu_text_box");
+        let add_Button = document.getElementById("add_todo_button");
+        let addArea = document.getElementById("main_todo_area");
+
+
+        add_Button.addEventListener("click" , () => {
+
+            let craete_box = document.createElement("div");
+            craete_box.className = "new_todu_box";
+            craete_box.textContent = text_box.value;
+            addArea.appendChild(craete_box);
+
+            let delete_btn = document.createElement("button");
+            delete_btn.className = "delete";
+            delete_btn.textContent = "X";
+            craete_box.appendChild(delete_btn);
+
+            delete_btn.addEventListener("click" , () =>{
+                craete_box.style.display = "none";
+            });
+
+        });
+
+
+
+        
+       
+
+    </script>
+
+    
+</body>
+</html>

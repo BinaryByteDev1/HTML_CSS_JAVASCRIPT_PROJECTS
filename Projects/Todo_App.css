@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    background-color: royalblue;
+}
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    padding-bottom: 50px;
+   
+}
+.main_box{
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+.text_add_div{
+
+    display: flex;
+    gap: 5px;
+
+}
+
+.main_box input{
+    width: 380px;
+    height: 58px;
+    padding-left: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.main_box input::placeholder{
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+.main_box input:focus{
+    border-top-color: royalblue;
+}
+.main_box .btn{
+    padding: 21px 28px;
+    border-radius: 3px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.new_todu_box{
+
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: orange;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    font-weight: 700;
+    color: white;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.delete{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main-box{
+    margin-top: 8px;
+    position: absolute;
+    background-color: #181818;
+    padding-top: 10px;
+}
+#logo-img{
+    width: 54px;
+    height: 54px;
+    border-radius: 28px;
+    margin-left: 30px;
+}
+b{
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+    position: relative;
+    font-weight: 500;
+    top: 5px;
+    color: white;
+}
+#coloring-modes-sun{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 100px;
+}
+#coloring-modes-sun:hover{
+    color: rgb(242, 11, 11);
+    transition: 0.6s;
+
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: rgb(44, 85, 181);
+    }   
+#coloring-modes-sun{
+    color: white;
+    font-size: 28px;
+    position: relative;
+    left: 60px;
+} 
+}
+@media screen and (max-width: 450px){
+    body{
+        background-color: teal;
+    }  
+#coloring-modes-sun{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 10px;
+}
+#logo-img{
+    width: 54px;
+    height: 54px;
+    border-radius: 28px;
+    margin-left: 0px;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    body{
+        background-color: rgb(35, 203, 233);
+    }
+#coloring-modes-sun{
+    color: white;
+    font-size: 25px;
+    float: right;
+    position: absolute;
+}
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    body{
+        background-color: rgb(192, 26, 142);
+    }  
+#coloring-modes-sun{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 25px;
+}
+}
+#search-bar{
+width: 600px ;
+height: 46px;
+border-radius: 3px;
+margin-top: 8px;
+padding-left: 20px;
+font-size: 20px;
+font-weight: 600;
+text-transform: capitalize;
+}
+#search-bar::placeholder{
+    font-size: 20px;
+    color: #000000;
+    border: none;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+@media screen and (min-width: 600px) and (max-width: 800px){
+#search-bar{
+    width: 240px;
+    height: 45px;
+    position: relative;
+    left: -40px;
+}
+
+   
+}
+@media screen and (min-width: 800px) and (max-width: 1024px){
+    #search-bar{
+        width: 400px;
+    }
+    
+        
+    }
+@media screen and (min-width: 300px) and (max-width: 599px){
+    #search-bar{
+        display: none;
+    }   
+    }
+ 

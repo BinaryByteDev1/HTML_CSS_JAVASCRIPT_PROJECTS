@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+
+    <style>
+        .container{
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            overflow: scroll;
+        }
+
+        .inner-box{
+            flex: 0 0 auto;
+            margin: 0px 25px;
+            width: 580px; 
+            height: 420px;
+            background-color: orange;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+    </div>
+    
+</body>
+</html>

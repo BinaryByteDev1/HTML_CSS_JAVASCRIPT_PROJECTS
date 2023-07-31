@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: #aeb5db; */
+            background-color: rgb(46, 44, 44);
+        }
+        .box{
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50% , -50%);
+            margin-top: 200px;
+            height: 240px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #9da3c5, #bac2ea);
+            box-shadow:  7px 7px 14px #8388a4,
+             -7px -7px 14px #dae2ff;
+
+        }
+        label{
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-family:monospace;
+        }
+        #data{
+            width: 89%;
+            height: 40px;
+            outline: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+            border: none;
+            background: #aeb5db;
+            box-shadow: inset 10px 10px 20px #848aa6,
+            inset -10px -10px 20px #d8e0ff;
+
+        }
+        ::placeholder{
+            color: rgb(70, 68, 68);
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+
+        button{
+            width: 90%;
+            height: 40px;
+            /* background-color: #aeb5db; */
+            border: none;
+            margin: 5px;
+            color: black;
+            font-size: 20px;
+            border-radius: 5px;
+            font-family:monospace;
+            font-weight: bold;
+            margin-top: 25px;
+            background: #aeb5db;
+            box-shadow: inset 10px 10px 20px #848aa6,
+            inset -10px -10px 20px #d8e0ff;
+            cursor: pointer;
+
+
+        }
+        h3{
+            width: 90%;
+            padding-top: 10px;
+            /* border: 2px solid red; */
+            height: 30px;
+            margin-left: 13px;
+            border-radius: 20px;
+            background: #aeb5db;
+            box-shadow: inset 10px 10px 20px #848aa6,
+            inset -10px -10px 20px #d8e0ff;
+            border-radius: 5px;
+            font-family:monospace;
+            font-size: 20px;
+            font-weight: bold;
+            overflow-y: auto;
+
+
+        }
+        b{
+            /* color: rgb(94, 12, 189); */
+            color: white;
+            font-size: 15px;
+            font-family: monospace;
+            text-shadow:  10px 8px 30px #601cb9;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <b>Convert Kms To Miles</b><br>
+    <input type="number" name="" step="any" id="data" placeholder="Enter Kms"><br>
+    <button onclick="convert()">Convert</button>
+
+    <h3 id="result" aria-placeholder="Miles"></h3>
+</div>
+
+    <script>
+        function convert() {
+            var kms = document.getElementById('data').value;
+            const factor = 0.621371;
+            var miles = kms * factor;
+            document.getElementById("result").innerText =`Miles = ${miles}` ;
+
+        }
+        
+    </script>
+    
+</body>
+</html>

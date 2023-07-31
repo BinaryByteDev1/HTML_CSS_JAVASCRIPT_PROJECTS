@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<script>
+        // var elm = document.getElementById("lists");
+        // console.log(elm.innerHTML);
+
+        // var elm2 = document.getElementsByClassName("list_1");
+        // for(let i = 0; i < elm2.length; i++) {
+        //     console.log(elm2[i].innerHTML);
+
+        // }
+
+        // var elm = document.getElementsByTagName("li");
+        // for(let i = 0; i < elm.length; i++) {
+        //     console.log(elm[i].innerText);
+
+        // }
+
+        // var elm = document.querySelectorAll(".list");
+        // for(let i = 0; i < elm.length; i++) {
+
+        //     console.log(elm[i])
+
+        // }
+
+
+
+
+
+
+        // DOM PRACTICE IN JAVASCRIPT PROGRAMMIG LANGUAGE
+        // DOM PRACTICE IN JAVASCRIPT PROGRAMMIG LANGUAGE
+
+        // let elm = document.querySelectorAll(".list");
+        // for(let i = 0; i < elm.length; i++) {
+
+        //    elm[i].innerHTML = "HELLO WORLD.";
+
+
+        // }
+
+        // var elm = document.getElementById("unordered-par");
+        // var chng = elm.getElementsByTagName("h1");
+
+        // for(let i = 0; i < chng.length; i++) 
+        // {
+        //     chng[i].innerHTML = "HELLO WORLD";
+        //     console.log(chng[i].innerHTML);
+
+        // }
+      // var elm = document.querySelectorAll("h2.quary");
+      // for(let i = 0; i < elm.length; i++) {
+      //   elm[i].innerHTML= "HELLO".toLowerCase();
+
+      // }
+ 
+          // let elm = document.getElementById("list-type1");
+          // let child = elm.lastElementChild.innerHTML = "Hello world.";
+          // console.log(child);
+
+          // var elm = document.getElementById("list-type1");
+          // var sibling = elm.previousElementSibling.previousElementSibling.previousElementSibling;
+          // console.log(sibling);
+
+          //  var head = document.getElementById("head");
+          //  var con = head.innerHTML = "Hello World";
+          //  console.log(con);
+          //  var para = document.getElementById("para");
+          //  var con_2 = para.innerHTML = "Hello Javascript";
+          //  console.log(con_2);
+
+          // var elm = document.getElementById("parent");
+          // var bold = document.createElement("b");
+          // let text = document.createTextNode("Lorem ipsum dolor sit amet consectetur,adipisicing elit. Architecto, quidem.")
+          // bold.appendChild(text);
+          // elm.appendChild(bold);
+
+          // var elm = document.getElementById("parent");
+          // elm.id = "insertID";
+          // var bold = document.createElement("b");
+          // var content = document.createTextNode("adipisicing elit. Architecto, quidem.".toUpperCase());
+          // bold.appendChild(content);
+          // elm.appendChild(bold);
+             
+        // var elm = document.getElementById("parent");
+        // let bold = document.createElement("b");
+        // bold.textContent = "Hii i am DOM in js"
+        // document.body.appendChild(bold);
+
+
+          // let para = document.getElementById("para");
+          // console.log(para.textContent);
+
+        // var elm = document.getElementById("parent");
+        // let item  = document.createElement("li");
+        // item.textContent = "list-5";
+        // elm.appendChild(item);
+
+          // var elm = document.getElementById("parent");
+          // var item = document.createElement("li");
+          // item.textContent = "list-5";
+          // elm.appendChild(item);
+
+          // var elm = document.getElementById("parent");
+          // var neww = document.createElement("li");
+          // var text = document.createTextNode("List 5");
+          // neww.appendChild(text);
+          // elm.appendChild(neww);
+          // console.log(elm);
+
+          // var elm = document.getElementById("parent");
+          // var newE = document.createElement("b");
+          // newE.textContent = "Wel come";
+          // elm.appendChild(newE);
+          // console.log(elm);
+
+        // var elm = document.getElementById("parent");
+        // elm.className = "newClass";
+        // elm.id = "IDnew";
+        // console.log(elm);
+
+        // var elm = document.getElementById("parent");
+        // var neww = document.createElement("li");
+        // neww.textContent = "Random List";
+        // var position = elm.firstElementChild.nextElementSibling.nextElementSibling;
+        // elm.insertBefore(neww , position);
+
+        // let parent = document.body;
+        // var elm = document.createElement("h3");
+        // elm.textContent = "HELLO WORLD.";
+
+        // var lis = document.getElementById("parent");
+        // parent.insertBefore(elm, lis);
+        
+
+          // var elm = document.getElementById("parent");
+          // var neww = document.createElement("li");
+          // neww.textContent = "Random List";
+          // var pos = elm.lastElementChild;
+          // elm.insertBefore(neww , pos);
+
+      // var parent = document.getElementById("menu");
+      // var elm = parent.firstElementChild.nextElementSibling;
+      // parent.removeChild(elm);
+      // document.body.removeChild(parent);
+
+      // var elm = document.getElementById("menu");
+      // var add = document.createElement("li");
+      // add.textContent = "Viedos";
+      // elm.appendChild(add);
+
+      // var elm = document.getElementById("menu");
+      // var add = document.createElement("li");
+      // add.textContent = "Viedos";
+
+      // var pos = elm.firstElementChild;
+      // elm.insertBefore(add , pos);
+      
+        // var elm = document.getElementById("menu");
+        // var neww = document.createElement("li");
+        // neww.textContent = "Viedos";
+
+        // var pos = elm.firstElementChild.nextElementSibling;
+        // elm.insertBefore(neww , pos);
+      
+
+        // var elm = document.getElementById("menu");
+        // let rem = elm.firstElementChild.nextElementSibling.nextElementSibling;
+        // elm.removeChild(rem);
+
+          // var parent = document.body;
+          // let elm = document.createElement("h1");
+          // elm.textContent = "HELLO JAVASCRIPT PROGRAMMING LANGUAGE";
+
+          // var add = document.getElementById("menu");
+          // parent.insertBefore(elm , add);
+         
+
+          // var elm = document.getElementById("menu");
+          // var rem = elm.firstElementChild.nextElementSibling;
+          // elm.removeChild(rem);
+
+        // var elm = document.getElementById("menu");
+        // document.body.removeChild(elm);
+
+
+        // var elm = document.getElementById('menu');
+
+        // let clone = elm.cloneNode(true);
+        // clone.id = "mobile-menu";
+
+        // // console.log(clone);
+
+        // document.body.appendChild(clone);
+
+
+        // var elm = document.getElementById("menu");
+        // var add = document.createElement("li");
+        // add.textContent = "Viedos";
+        // console.log(add);
+
+        // let elm = document.getElementById("btn");
+        // elm.setAttribute("class" , 'button');
+        // console.log(elm);
+
+        // var elm = document.getElementsByClassName("btn");
+        //   for(let i = 0; i < elm.length; i++) {
+
+        //       elm[i].setAttribute("class" , "button");
+
+
+        //   }
+          
+        // var elm = document.getElementsByTagName("button");
+        //   for(let i = 0; i < elm.length; i++) {
+
+        //       elm[i].setAttribute("class" , "button");
+
+
+        //   }
+
+          // var elm = document.getElementById("btn");
+          // var get = elm.getAttribute("name");
+          // console.log(get);
+
+
+          // var elm = document.getElementById("btn");
+          // var get = elm.getAttribute("name");
+          // console.log(get);
+
+            // var elm = document.getElementById("btn");
+            // var rem = elm.removeAttribute("name");
+            // console.log(rem);
+          // var elm = document.getElementById("btn");
+          // var rem = elm.removeAttribute("name");
+
+
+          // var elm = document.getElementById("btn");
+          // var has = elm.hasAttribute("name");
+          // console.log(has);
+
+            // var elm = document.getElementById("btn");
+            // elm.style.cssText = "background-color: orange; color: white; padding: 10px; border-radius: 7px; border: none;"
+
+              // var elm = document.getElementById("btn");
+              // elm.setAttribute("style" , "background-color: blue; padding: 10px; color: white; border: none;")
+
+                // var elm = document.getElementById("btn");
+                // elm.style.background = "teal";
+                // elm.style.padding = "10px";
+                // elm.style.border = "none";
+
+          // var elm = document.body;
+          // var set = elm.setAttribute("class" , "boddy");
+     
+            // var elm = document.getElementById("btn");
+            // var chk = getComputedStyle(elm);
+            // console.log(chk);
+
+        // const button = document.getElementById("button");
+
+        //    const backgroundChanger = function() {
+        //     const hexval = Math.floor(Math.random() * 0xffffff).toString(16);
+        //     document.body.style.background = `#${hexval}`;
+
+        //     console.log(hexval);
+
+        //    }
+        //   button.addEventListener("click" , backgroundChanger);
+
+      // var elm = document.getElementById("menu");
+      // var neww = document.createElement("li");
+      // neww.textContent = "Viedos";
+      // var rep = elm.firstElementChild.nextElementSibling.nextElementSibling;
+      // elm.replaceChild(neww , rep);
+
+          // var elm = document.getElementById("btn");
+          // elm.setAttribute("class" , "toggler");
+
+
+          // var elm = document.getElementById("btn");
+          // let val =  elm.getAttribute('id');
+          // console.log(val);
+
+          // var elm = document.getElementById("btn");
+          // let val =  elm.removeAttribute('name');
+
+          // var elm = document.getElementById("btn");
+          // let val =  elm.hasAttribute('class');
+          // console.log(val);
+
+        // var btn = document.getElementById("btn");
+        // btn.style.cssText = "background-color: orange; border: none; padding: 10px;"
+
+        // var btn = document.getElementById("btn");
+        // btn.setAttribute("style"  , "color: red; padding: 10px;")
+       
+        // var btn = document.getElementById("btn");
+        // btn.style.background = "teal";
+        // btn.style.padding = "10px";
+        
+        // var btn = document.getElementById('btn');
+        // var css = getComputedStyle(btn);
+        // console.log(css.padding);
+          // var box = document.getElementById("box");
+          // // console.log(box.className)
+          // // box.className += " dim";
+          // for(let css of box.classList) {
+          // console.log(css);
+
+            
+          // }
+
+          // var box = document.getElementById("box");
+          // box.classList.toggle("dim");
+
+        // var elm = document.getElementById("box");
+        // let width = elm.clientWidth;
+        // let height = elm.clientHeight;
+        // console.log(width);
+        // console.log(height);
+      
+
+      // let box = document.getElementById("box");
+      // console.log(box.className);
+      // box.className += " dim";
+      // console.log(box.className);
+
+
+      // let box = document.getElementById("box");
+      // console.log(box.classList);
+      // for(let css of box.classList) {
+      //     console.log(css);
+      // }
+
+        // let box = document.getElementById("box");
+        // let res = box.classList.contains("color");
+        // console.log(res);
+
+        // let box = document.getElementById("box");
+        //  box.classList.toggle("dim");
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

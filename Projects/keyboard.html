@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="keyboard.css">
+</head>
+<body>
+    <div class="container">
+    <textarea id="screen" class="screen_show" placeholder="Enter Paragraph:-"></textarea>
+      
+        <div class="main_box">
+            <div class="buttons_boxes">
+                <button>Q</button>
+                <button>W</button>
+                <button>E</button>
+                <button>R</button>
+                <button>T</button>
+                <button>Y</button>
+                <button>U</button>
+                <button>I</button>
+                <button>O</button>
+                <button>P</button>
+                <button class="back_space" id="back_space_btn"></button> 
+
+            </div>
+
+            <div class="buttons_boxes">
+                <button class="capsLock" id="capsLock_btn"></button>
+
+                <button>A</button>
+                <button>S</button>
+                <button>D</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+
+            </div>
+
+            <div class="buttons_boxes">
+                <button>Z</button>
+                <button>X</button>
+                <button>C</button>
+                <button>V</button>
+                <button>B</button>
+                <button>N</button>
+                <button>M</button>
+                <a id="enter_btn" class="enter">Enter</a>
+            </div>
+            <div class="space_div">
+                <button class="space" id="space_btn"></button> 
+            </div>
+        </div>
+    </div>
+    <script>
+        let screen = document.getElementById("screen");
+        let buttons = document.querySelectorAll('button');
+        let space_btn = document.getElementById('space_btn');
+        let back_space_btn = document.getElementById('back_space_btn');
+        let capsLock = document.getElementById("capsLock_btn");
+        let enter_btn = document.getElementById("enter_btn");
+
+        let shown_screen = "";
+        let allBtn = Array.from(buttons);
+        allBtn.forEach(buttons  =>{
+            buttons.addEventListener("click" , (btn) => {
+                    shown_screen += btn.target.innerHTML;
+                    screen.value = shown_screen;
+                if(btn.target == space_btn){
+                    shown_screen += " ";
+                    screen.value = shown_screen;
+                }
+                else if(btn.target == back_space_btn){
+                    shown_screen = shown_screen.substring(0,shown_screen.length-1);
+                    screen.value = shown_screen;
+                }
+                else if(btn.target == capsLock){
+                    shown_screen = shown_screen.toLocaleLowerCase();
+                    screen.value = shown_screen;
+                let msg = capsLock.innerText = "CapsLock Of";
+                let msg_color = capsLock.style.background = "orange";
+                setTimeout(() =>{
+                    msg = capsLock.innerText = " ";
+                    msg_color = capsLock.style.background = "none";
+                  },2000);
+                }   
+                enter_btn.addEventListener("click" , () => {
+                    shown_screen += "\n";
+                    screen.value = shown_screen;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
